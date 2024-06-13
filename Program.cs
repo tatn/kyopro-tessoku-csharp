@@ -1,2 +1,1 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿KyoproTessokuCsharp.chap01.A01.Main(new string[0] { });
