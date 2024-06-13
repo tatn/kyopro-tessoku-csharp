@@ -15,4 +15,15 @@
     <NoWarn>1701;1702;7022</NoWarn>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="chap04\" />
+    <Folder Include="chap08\" />
+    <Folder Include="chap10\" />
+    <Folder Include="chap09\" />
+    <Folder Include="chap07\" />
+    <Folder Include="chap06\" />
+    <Folder Include="chap05\" />
+    <Folder Include="chap03\" />
+  </ItemGroup>
+
 </Project>
