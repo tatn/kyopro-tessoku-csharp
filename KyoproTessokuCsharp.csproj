@@ -23,7 +23,7 @@
     <Folder Include="chap07\" />
     <Folder Include="chap06\" />
     <Folder Include="chap05\" />
-    <Folder Include="chap03\" />
+	<Folder Include="chap03\" />
   </ItemGroup>
 
 </Project>
