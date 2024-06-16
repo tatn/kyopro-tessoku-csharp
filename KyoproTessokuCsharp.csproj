@@ -16,7 +16,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="chap04\" />
     <Folder Include="chap08\" />
     <Folder Include="chap10\" />
     <Folder Include="chap09\" />
