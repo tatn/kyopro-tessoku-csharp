@@ -11,7 +11,7 @@
             int[] A = ReadIntArray();
 
             int[,] dp = new int[N + 1, N + 1];
-            for (int i = 1; i < N; i++)
+            for (int i = 1; i <= N; i++)
             {
                 dp[N, i] = A[i - 1];
             }
