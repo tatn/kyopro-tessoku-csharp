@@ -22,7 +22,6 @@
     <Folder Include="chap10\" />
     <Folder Include="chap09\" />
     <Folder Include="chap07\" />
-    <Folder Include="chap06\" />
 	<Folder Include="chap03\" />
   </ItemGroup>
 
