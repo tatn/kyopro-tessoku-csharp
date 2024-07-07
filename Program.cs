@@ -1,2 +1,2 @@
-﻿KyoproTessokuCsharp.chap06.B45.Main(new string[0] { });
+﻿KyoproTessokuCsharp.chap10.A72.Main(new string[0] { });
 
