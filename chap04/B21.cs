@@ -10,7 +10,7 @@
             int N = ReadInt();
             string S = ReadString();
 
-            // TODO
+            // TODO 6
         }
     }
 }

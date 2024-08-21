@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            //TODO 
+            //TODO 4
             int[] ReadIntArray() => Console.ReadLine()!.Split().Select(int.Parse).ToArray();
             int ReadInt() => int.Parse(Console.ReadLine()!);
 

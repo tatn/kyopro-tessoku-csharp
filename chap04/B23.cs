@@ -4,16 +4,21 @@
     {
         public static void Main(string[] args)
         {
+            int ReadInt() => int.Parse(Console.ReadLine()!);
             int[] ReadIntArray() => Console.ReadLine()!.Split().Select(int.Parse).ToArray();
 
-            int[] NM = ReadIntArray();
-            int N = NM[0];
-            int M = NM[1];
+            int N = ReadInt();
 
-            int[,] A = new int[M+1, N+1];
+            int[,] XY = new int[N, 2];
 
+            for (int i = 0; i < N; i++)
+            {
+                int[] xy = ReadIntArray();
+                XY[i, 0] = xy[0];
+                XY[i, 1] = xy[1];
+            }
 
-            // TODO
+            // TODO 5
         }
     }
 }
