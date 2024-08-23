@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            //TODO 4
+
             int[] ReadIntArray() => Console.ReadLine()!.Split().Select(int.Parse).ToArray();
             int ReadInt() => int.Parse(Console.ReadLine()!);
 
@@ -16,14 +16,19 @@
                 Query.Add(ReadIntArray());
             }
 
-            SortedSet<int> desk = new SortedSet<int>();
+            List<int> desk = new List<int>();
 
             foreach (int[] q in Query)
             {
                 switch (q[0])
                 {
                     case 1:
-                        desk.Add(q[1]);
+                        int insertIndex = desk.BinarySearch(q[1]);
+                        if (insertIndex <= 0)
+                        {
+                            desk.Insert(~insertIndex,q[1]);
+                        }
+                
                         break;
                     case 2:
                         desk.Remove(q[1]);
@@ -35,14 +40,16 @@
                         }
                         else
                         {
-                            int min = desk.Min();
-                            if (q[1] <= min)
+                            int index = desk.BinarySearch(q[1]);
+
+                            if (0 <= index)
                             {
-                                Console.WriteLine(min);
+                                Console.WriteLine(desk[index]);
                             }
                             else
                             {
-                                Console.WriteLine(-1);
+                                int findIndex = ~index;
+                                Console.WriteLine(findIndex < desk.Count ? desk[findIndex] : -1);
                             }
                         }
                         break;
