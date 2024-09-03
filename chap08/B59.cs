@@ -106,7 +106,7 @@
         }
 
 
-        public static void MainLTE(string[] args)
+        public static void MainTLE(string[] args)
         {
             int[] ReadIntArray() => Console.ReadLine()!.Split().Select(int.Parse).ToArray();
             int ReadInt() => int.Parse(Console.ReadLine()!);
